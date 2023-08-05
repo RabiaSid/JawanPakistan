@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="container">
+        <h1>Mobile Phone Search</h1>
+        <label for="searchBy">Search By:</label>
+        <select id="searchBy">
+            <option value="Model">Model</option>
+            <option value="Company">Company</option>
+            <option value="Price">Price</option>
+            <option value="Camera">Camera</option>
+            <!-- Add more options as needed -->
+        </select>
+        <input type="text" id="searchValue" placeholder="Enter search value">
+        <button onclick="filterMobiles()">Search</button>
+    </div>
+
+    <div id="results">
+        <!-- The filtered results will be displayed here -->
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
