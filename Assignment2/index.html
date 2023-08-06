@@ -3,28 +3,24 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" type="text/css" href="styles.css">
     <title>Document</title>
 </head>
 <body>
-    <div class="container">
-        <h1>Mobile Phone Search</h1>
-        <label for="searchBy">Search By:</label>
-        <select id="searchBy">
-            <option value="Model">Model</option>
-            <option value="Company">Company</option>
-            <option value="Price">Price</option>
-            <option value="Camera">Camera</option>
-            <!-- Add more options as needed -->
-        </select>
-        <input type="text" id="searchValue" placeholder="Enter search value">
-        <button onclick="filterMobiles()">Search</button>
-    </div>
-
-    <div id="results">
-        
-    </div>
-
-    <script src="script.js"></script>
+    <select onchange="" id="company"></select>
+    <select id="model"></select>
+    <table>
+        <tr>
+            <th>Brands</th>
+            <th>Modal</th>
+            <th>Price</th>
+            <th>Camera</th>
+            <th>Ram</th>
+            <th>Rom</th>
+          </tr>
+          <tbody id="tableBody">
+            
+          </tbody>
+    </table>
+<script src="script.js"></script>
 </body>
 </html>
